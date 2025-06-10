@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Bierce - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      font-size: 15px;
+    }
+
+    header#page-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header#page-header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      color: #000000;
+    }
+
+    header#page-header p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 0;
+    }
+
+    header#page-header a {
+      color: #0563c1;
+      text-decoration: none;
+    }
+
+    header#page-header a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2.section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #000000;
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    h3.subsection-title,
+    h3.role {
+      font-size: 17px;
+      font-weight: 700;
+      color: #000000;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .summary-text,
+    .key-skills p:first-child {
+      margin-bottom: 10px;
+    }
+
+    .key-skills ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .key-skills ul li {
+      margin-bottom: 5px;
+    }
+
+    .skill-category {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .skill-category h3.subsection-title {
+      margin-bottom: 8px;
+    }
+
+    .skill-category p {
+      margin-bottom: 5px;
+      line-height: 1.4;
+    }
+
+    .experience-entry {
+      margin-bottom: 25px;
+    }
+
+    .experience-entry .meta-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3px;
+      font-size: 15px;
+    }
+
+    .experience-entry .company-location strong {
+      font-weight: 700;
+      color: #000000; /* Match original bold color */
+    }
+
+    .experience-entry .dates {
+      font-weight: 700;
+      color: #000000; /* Match original bold date color */
+    }
+
+    .experience-entry h3.role {
+      margin-bottom: 8px;
+      font-weight: 700; /* Match original bold role */
+    }
+
+    .experience-entry ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .experience-entry ul li {
+      margin-bottom: 5px;
+    }
+
+    .experience-entry p:not(.meta-info) { /* For descriptions not in a list */
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    /* For print */
+    @media print {
+      body {
+        max-width: none;
+        padding: 20px;
+        font-size: 10pt; /* Adjust for print */
+      }
+      header#page-header h1 { font-size: 20pt; }
+      header#page-header p { font-size: 10pt; }
+      h2.section-title { font-size: 14pt; }
+      h3.subsection-title, h3.role { font-size: 12pt; }
+      .experience-entry .meta-info { font-size: 10pt; }
+      a { text-decoration: none; color: #000; }
+      section { page-break-inside: avoid; }
+      ul, p { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="page-header">
+    <h1>DAVID BIERCE</h1>
+    <p>
+      <a href="mailto:david@bierce.org">david@bierce.org</a> | <a href="https://www.linkedin.com/in/david-bierce-76b0246/" target="_blank" rel="noopener noreferrer">linkedin.com/david-bierce/</a> |
+      <a href="http://www.bierce.org/" target="_blank" rel="noopener noreferrer">http://www.bierce.org/</a>
+    </p>
+  </header>
+
+  <main>
+    <section id="summary">
+      <h2 class="section-title">SYSTEMS ENGINEER</h2>
+      <p class="summary-text">
+        A systems engineer with a background spanning software development, network infrastructure, and physical hardware. Experienced in automated deployments, leveraging AI to accelerate development and troubleshooting, and collaborating with cross-functional teams to solve large-scale infrastructure challenges. Equally comfortable debugging low-level network packets and hardware internals, or leading technical discussions to align teams and move projects forward.
+      </p>
+    </section>
+
+    <section id="computer-experience">
+      <h2 class="section-title">COMPUTER EXPERIENCE</h2>
+      <div class="skill-category">
+        <h3 class="subsection-title">Languages</h3>
+        <p> Python | SQL | Go | Rust | Shell</p>
+      </div>
+      <div class="skill-category">
+        <h3 class="subsection-title">Data Storage & Processing</h3>
+        <p> Git | PostgreSQL | NFS | GlusterFS | Ceph | Samba | VMWare </p>
+      </div>
+    </section>
+
+    <section id="work-experience">
+      <h2 class="section-title">WORK EXPERIENCE</h2>
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>Meta</strong>, Altoona, Iowa</span>
+          <span class="dates">2024-Present</span>
+        </p>
+        <h3 class="role">Production Operations Engineer</h3>
+        <ul>
+          <li>Part of the core team planning and deploying server infrastructure for a 100,000+ H100 GPU AI training cluster.</li>
+          <li>Diagnosed and resolved physical layer and fiber optic issues across high-speed Infiniband fabrics, troubleshooting transceivers and cabling to optimize link throughput.</li>
+          <li>Troubleshot complex power delivery challenges, resolving issues spanning Open Rack Power (ORv3) shelves, utility grid interfaces, and power distribution units.</li>
+          <li>Performed hands-on component-level server repairs, hardware validation, and system debugging across a diverse, high-density fleet.</li>
+          <li>Leveraged AI tools and custom automation (Python, Bash/Zsh, SQL, Hack/PHP) to streamline hardware diagnostics and accelerate deployment pipelines.</li>
+        </ul>
+      </article>
+
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>Meta</strong>, Altoona, Iowa</span>
+          <span class="dates">2021-2024</span>
+        </p>
+        <h3 class="role">Release to Production Engineer</h3>
+        <ul>
+          <li>Collaborated with internal hardware design teams and external vendors to validate, test, and onboard new server platforms and computing architectures into the datacenter fleet.</li>
+          <li>Built and maintained automated tooling and CI/CD pipelines for workflow automation, validating server health and configuration quality prior to production release.</li>
+          <li>Led cross-functional initiatives with datacenter operations teams to define hardware serviceability, diagnostic tooling requirements, and quality baselines.</li>
+          <li>Acted as a technical lead and escalation resource, mentoring peers and troubleshooting complex system-level hardware and Linux OS issues.</li>
+        </ul>
+      </article>
+
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>Facebook</strong>, Altoona, Iowa</span>
+          <span class="dates">2016-2021</span>
+        </p>
+        <h3 class="role">Data Center Capacity Engineer</h3>
+        <ul>
+          <li>Perform deep dives and analyze complex technical issues within the
+        data center, ranging from automated tooling to hardware failures and
+        network issues.</li>
+          <li>Provide guidance and mentor technical peers and be a go-to technical
+        resource to evaluate and look for better ways to resolve issues and
+        define updates to tools and processes.</li>
+          <li>Plan for large-scale deployments of hardware, while considering
+        space, power, cooling, networking, and resiliency.</li>
+          <li>Work with internal hardware teams and vendors to help resolve complex
+        technical issues that affect Facebook&#39;s computing
+        infrastructure.</li>
+        </ul>
+      </article>
+
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>IBM</strong>, Des Moines, Iowa</span>
+          <span class="dates">2015-2016</span>
+        </p>
+        <h3 class="role">Global Devops Technical Lead for IBM Cloud Builder</h3>
+        <p>Technical lead for global Devops tools and automated developer testing
+      for Softlayer cloud products, now called IBM Cloud, including
+      CloudBuilder, IBM Cloud Orchestrator, Urban Code Deploy and other IBM
+      cloud products. I also performed code review for several automation
+      platforms that are written in Python, Groovy, Java and Go. Internally, I
+      promoted and implemented the usage of emerging technologies and
+      techniques such as continuous integration, docker and saltstack. My work
+      required broad knowledge of cloud architectures, creating continuous
+      integration pipelines and guide the continuous deployment of new
+      products, features and fixes.</p>
+      </article>
+
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>Appcore</strong>, Des Moines, IA</span>
+          <span class="dates">2013-2015</span>
+        </p>
+        <h3 class="role">Product Cloud Architect</h3>
+        <ul>
+          <li>Appcore was a successful startup that required extreme overlap into
+        multiple facets of technology.</li>
+          <li>Collaborate to create product road map for Project Atlas, a cloud
+        orchestration platform.</li>
+          <li>Lead Architect for implementing baremetal management into software
+        orchestration.</li>
+          <li>Develop cloud automation software in Groovy and Python using agile
+        methodologies.</li>
+          <li>Create a complete software deployment pipeline driven by
+        Gradle(Groovy) and continuous integration.</li>
+          <li>Report bug fixes and patches to open-source projects such as
+        SaltStack(Python), OpenStack(Python) and CloudStack(Java) Provide
+        technical education for storage and networking technologies.</li>
+          <li>Support customers using a wide variety of technologies such Gluster,
+        Puppet, Nexenta, CentOS, NFS, iSCSI, XenServer.</li>
+        </ul>
+      </article>
+
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>E-Markets</strong>, Ames, IA</span>
+          <span class="dates">2008-2013</span>
+        </p>
+        <h3 class="role">IT & Systems Operations Lead</h3>
+        <ul>
+          <li>Managed the IT department and ran the production datacenter hosting the company's web-based ERP ordering platform, ensuring high availability for the core business product.</li>
+          <li>Directed corporate IT infrastructure, managing network connectivity, security, and systems across three remote branch offices in North America.</li>
+          <li>Built and scaled the corporate communications network, migrating the headquarters and branch offices to an Asterisk-based VoIP platform.</li>
+          <li>Developed custom software integration systems and web features in Perl and C#, and built a Perl-based automated deployment pipeline for the ERP platform.</li>
+          <li>Managed IT personnel, vendor contracts, hardware provisioning, and system automation using SaltStack and Microsoft System Center.</li>
+        </ul>
+      </article>
+
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>Cynic by Trade, LLC</strong>, La Crosse, WI</span>
+          <span class="dates">2002-2011</span>
+        </p>
+        <h3 class="role">Vice President</h3>
+        <ul>
+          <li>Co-founded and operated a technology consultancy providing full-stack systems engineering, network design, and custom programming to small and medium businesses.</li>
+          <li>Designed and deployed secure local area network (LAN) and wide area network (WAN) topologies, incorporating firewalls, VPNs, and subnetting.</li>
+          <li>Built, programmed, and maintained custom business software, databases, and automated integrations using various scripting and programming languages.</li>
+          <li>Deployed, configured, and maintained on-premise Linux servers, storage solutions, and network infrastructure (routers, switches, cabling).</li>
+        </ul>
+      </article>
+
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>Palisade Systems, Inc.</strong>, Ames, IA</span>
+          <span class="dates">2005-2008</span>
+        </p>
+        <h3 class="role">Software Engineer</h3>
+        <ul>
+          <li>Supported and maintained network and endpoint security appliances (PacketHound, ScreenDoor) running on FreeBSD, contributing to the packet inspection engines written in C.</li>
+          <li>Utilized PCRE and network hashing algorithms to build and debug application signatures, upstreaming rules to Snort and supporting SSL proxying with Squid.</li>
+          <li>Developed and updated the appliance administrative WebUI using PHP and JavaScript.</li>
+          <li>Built automated test harnesses that ran against software builds to validate TCP/IP and UDP traffic handling for the release pipeline.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="volunteer-experience">
+      <h2 class="section-title">VOLUNTEER EXPERIENCE</h2>
+      <article class="experience-entry">
+        <p class="meta-info">
+          <span class="company-location"><strong>Des Moines Charity Hack</strong>, Des Moines, Iowa</span>
+          <span class="dates">2015-Present</span>
+        </p>
+        <h3 class="role">Developer Volunteer</h3>
+        <p>Technology professionals arrive for 48 hours once a year to build and
+      implement tools to make the area&#39;s nonprofits operate more
+      effectively so they can continue to focus on doing good.</p>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>
